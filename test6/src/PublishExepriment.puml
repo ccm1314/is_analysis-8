@@ -1,0 +1,10 @@
+@startuml
+title 基于GitHub的实验管理平台--发布实验用例的顺序图
+actor teachers
+== 发布实验 ==
+teachers -> class : 输入工号
+class -> teachers : 核对科任老师正确
+teachers -> Exepriment :发布实验
+class -> teachers : 核对科任老师失败
+teachers -> Exepriment :无法发布实验
+@enduml
